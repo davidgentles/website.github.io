@@ -1,0 +1,51 @@
+---
+import JobDescription from "./JobDescription.astro";
+---
+
+<div>
+  <h2 class="text-3xl text-white font-semibold pb-4">Work Experience</h2>
+  <JobDescription
+    companyName="Administrate"
+    companyDescription="Training infrastructure that streamlines course administration and delivery for multinational companies and educational institutions."
+    companyLogo="/administrate_logo.jpg"
+    positionTitle="Senior Software Engineer"
+    positionDescription="Full stack engineer developing and maintaining features in a Python GraphQL backend, Typescript React frontend stack hosted on AWS along with PHP and Node applications. Later focus on integrating with 3rd party systems, and increased responsibility through project leadership and on-call duties."
+    start="November 2016"
+    end="Current"
+    keyContributions={[
+      "Led implementation of business-critical calendar integration capabilities, forming part of an Enterprise pricing tier that increased revenue and customer satisfaction.",
+      "Implemented CI and CD using GitHub Actions resulting in safer, reusable workflows that halved deployment time.",
+      "Received innovation award for using GraphQL API schema introspection to enable valuable integrations through a no-code Integration Platform, saving 4+ hours of engineering time per API change.",
+      "Created an Identity Provider that standardised authorization across training, learning, and storefront platforms.",
+      "Delivered an SQL schema migration tool, resulting in faster deployment and enhanced reliability of schema changes.",
+      "Created a data ingest toolset in AWS that reduced complexity of onboarding and syncing customer data, saving hours of Data Analyst time per week.",
+    ]}
+  />
+  <JobDescription
+    companyName="Valiant Interactive"
+    companyDescription="Independent games studio creating colourful, retro-infused arcade games."
+    companyLogo="/valiant_interactive_logo.png"
+    positionTitle="Director"
+    positionDescription="Co-founder, game designer and engineer. Programmed game systems and user interfaces using Unity C# script. Designed gameplay mechanics, levels and characters. Iterated these designs based on user feedback to maintain fair and balanced gameplay."
+    start="March 2015"
+    end="March 2016"
+    keyContributions={[
+      "Collaborated with artists and engineers to design, create and release the video game Gyrodisc Super League.",
+      "Promoted the game through social media and gaming conventions.",
+    ]}
+  />
+  <JobDescription
+    companyName="Rockstar Games"
+    companyDescription="Leading video game developer known for creating groundbreaking and immersive gaming experiences enjoyed by millions worldwide."
+    companyLogo="/rockstar_games_logo.jpg"
+    positionTitle="Mission Scripter"
+    positionDescription="Mission Scripter working with in-house scripting language to create game content for Grand Theft Auto V and Grand Theft Auto Online."
+    start="September 2009"
+    end="February 2014"
+    keyContributions={[
+      "Crafted cinematic missions with shootouts, car chases, and minigames.",
+      "Implemented online social activities, shops, leaderboards and spectator modes.",
+      "Produced content creation tools, saving time for other developers.",
+    ]}
+  />
+</div>
