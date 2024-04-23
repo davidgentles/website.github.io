@@ -1,16 +1,96 @@
 ---
-
+import WorkExperience from "../components/WorkExperience.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>David Gentles</title>
-	</head>
-	<body>
-		<h1 class="text-3xl font-bold underline">David Gentles</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>David Gentles</title>
+  </head>
+  <body
+    class="max-w-prose mx-auto bg-nice-grey text-gray-100 pt-4 font-inter px-8 md:px-0"
+  >
+    <header class="pb-4">
+      <h1 class="text-5xl text-white font-extrabold pb-2">David Gentles</h1>
+      <p class="text-lg text-neutral-200">Senior Software Engineer</p>
+      <p class="text-lg text-neutral-200">Edinburgh, UK</p>
+    </header>
+    <div class="pb-6">
+      <div
+        class="border border-aztec-600 rounded-lg p-2 underline bg-aztec-950 text-aztec-400 flex items-center"
+      >
+        <a
+          class="flex-1 text-center hover:text-aztec-100"
+          href="mailto:hello@davidgentles.com>">Email</a
+        >
+        <a
+          class="flex-1 text-center hover:text-aztec-100"
+          href="https://www.linkedin.com/in/david-gentles/">LinkedIn</a
+        >
+        <a
+          class="flex-1 text-center hover:text-aztec-100"
+          href="httdivs://github.com/davidgentles">GitHub</a
+        >
+      </div>
+    </div>
+    <main>
+      <p class="pb-10">
+        Passionate Senior Software Engineer that loves collaboration and
+        problem-solving. With 7 years experience creating impactful, full-stack
+        solutions for SAAS cloud based software, and 6 years of video game
+        development before that, I bring a strong and diverse skill set.
+      </p>
+      <WorkExperience />
+      <div class="pb-10">
+        <h2 class="text-3xl text-white font-semibold pb-2">Skills</h2>
+        <p>Python</p>
+        <p>TypeScript</p>
+        <p>React</p>
+        <p>SQL</p>
+        <p>AWS</p>
+        <p>GraphQL</p>
+        <p>Docker</p>
+      </div>
+      <div class="pb-10">
+        <h2 class="text-3xl text-white font-semibold pb-2">Education</h2>
+        <p>BSc - First with Honours</p>
+        <p>Computer Games Technology</p>
+        <p>University of Abertay Dundee</p>
+        <p>2005-2009</p>
+      </div>
+      <div class="pb-10">
+        <p class="text-sm text-neutral-400">
+          Source code available at <a
+            class="text-aztec-400 underline hover:text-aztec-100"
+            href="https://github.com/davidgentles/website.github.io"
+            >davidgentles/website.github.io</a
+          >
+        </p>
+        <p class="text-sm text-neutral-400">
+          Created using <a
+            class="text-aztec-400 underline hover:text-aztec-100"
+            href="https://astro.build/">Astro</a
+          > and <a
+            class="text-aztec-400 underline hover:text-aztec-100"
+            href="https://tailwindcss.com/">Tailwind</a
+          >
+          <p class="text-sm text-neutral-400">
+            Hosted on <a
+              class="text-aztec-400 underline hover:text-aztec-100"
+              href="https://pages.github.com/">GitHub Pages</a
+            >
+          </p>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
